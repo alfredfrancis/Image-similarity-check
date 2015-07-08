@@ -1,6 +1,3 @@
-<!--
-Authors : Alfred francis,Ajith kumar
--->
 <html>
   <head>
        <title>Image Similarity Measure </title>
