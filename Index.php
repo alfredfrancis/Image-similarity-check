@@ -1,3 +1,19 @@
+<head>
+   <title>Image comparison </title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.css">
+  <style>
+  .container {
+    width:auto;
+    margin: 0 auto;
+
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Image Similarity check</h1>
 <?php
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 function compareImages($imagePathA, $imagePathB)
@@ -55,13 +71,14 @@ if (isset($_POST["a"]) && !empty($_POST["b"]))
 else{
 ?>
 <form name="comapre" method="post"  action="main.php">
-  First image:<br>
-  <input type="text" name="a">
+  <input type="text" class="form-control" name="a" placeholder="Path to first Image" required autofocus>
   <br>
-  Second image:<br>
-  <input type="text" name="b"><br>
-  <input type="submit">
+  <input type="text" class="form-control" name="b" placeholder="Path to second Image" required><br>
+  <input type="submit" class="btn btn-lg btn-primary btn-block">
 </form>
 <?php
 }
 ?>
+</div>
+</body>
+</html>
