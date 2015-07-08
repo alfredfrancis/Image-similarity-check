@@ -71,9 +71,9 @@ if (isset($_POST["a"]) && !empty($_POST["b"]))
 else{
 ?>
 <form name="comapre" method="post"  action="main.php">
-  <input type="text" class="form-control" name="a" placeholder="Path to first Image" required autofocus>
+  <input type="text" class="form-control" name="a" placeholder="Path to first Image (*.jpg)" required autofocus>
   <br>
-  <input type="text" class="form-control" name="b" placeholder="Path to second Image" required><br>
+  <input type="text" class="form-control" name="b" placeholder="Path to second Image (*.jpg)" required><br>
   <input type="submit" value="Compare" class="btn btn-lg btn-primary btn-block">
 </form>
 <?php
